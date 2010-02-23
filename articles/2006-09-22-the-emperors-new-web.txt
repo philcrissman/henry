@@ -1,0 +1,93 @@
+--- 
+title: The Emperor's New Web
+date: 22/09/2006
+
+Once upon a time there was an emperor of a far country. In this country, the internet prospered and grew, and the web was used by many of the emperor's subjects. The emperor himself was a web aficionado, and was a great patron of Internet and web related ventures in his empire.
+
+One day, two developers arrived at the palace, and asked if they could have an audience with the emperor. When pressed, they stated that their purpose was something mysterious to do with the web, in which they believed that the emperor would have great interest, but which they could not reveal to the porter unless he signed a NDA. The porter, knowing his majesty's affinity for all things webby, immediately ushered them to the audience room.
+
+When the emperor learned of their presence, he immediately went to meet them, and to ask them what it was they wished to show him.
+
+"We are working on a Whole New Web," said the first.
+
+"It will be the New New Internet," said the other.
+
+The emperor raised an eyebrow.
+
+"It will be more responsive... more socially connected," said the first.
+
+"It will look fancier," said the second. "Everything will be shiny and beautiful."
+
+"It may have to stay in beta for awhile," began the first.
+
+"Also -- it possesses the unique quality that only those users who 'get it' -- users with 'clue' -- will be able to see it," said the second.
+
+"Yes," said the first. "You will immediately be able to tell who are the best and brightest in your empire by how they react to the New New Internet."
+
+"I'm interested," said the emperor. "Tell you what; you can stay in the palace, and work on this."
+
+And so the two strangers began to work. For a long time, they worked in solitude, but eventually, after the emperor had signed up for their release notification mailing list several times, they announced that they were ready to show him the results of their labors.
+
+Extremely excited, the emperor rushed down to the development lab. There he sat down in anticipation in front of a computer, and one of the developers clicked a link, and their new site sprang to life.
+
+The emperor blinked.
+
+"Well," said the first, "What do you think?"
+
+The emperor considered. Certainly, it was very pretty. All the colors were vivid, and there was an attractive design scheme to the whole page. The logo was very shiny. It had a transparent shiny badge that said "Beta" covering one corner of it. You could connect with other users of the site. It had tags. It had RSS feeds.
+
+But none of these were things that were new to his majesty the emperor.
+
+"Well," he began.
+
+"Have you seen <em>this</em>?" said the second, and he began clicking things.
+
+As he clicked, various bits of the page would fade in and out, and slide around, and expand and contract. It was very slick-looking, and while it was not a completely <em>common</em> practice, the emperor was aware of how this was done, and that it had been possible to do things like this on web pages for some time.
+
+"That is nice," he admitted. "Well..."
+
+"As we mentioned," said the first, "Only people who 'get it', netizens with 'clue' are able to see the New New Web."
+
+Anxiously, the second said, "You do <em>see it</em>, don't you?"
+
+At this point, the emperor was unwilling to say that he did not have "clue", or that he did not "get it", so he said, "Well of course I see it. It's the new new web. I 'get it'!"
+
+"Wonderful," said the two developers in chorus. "We knew you would!"
+
+"Now we just need to share this with the rest of the empire," said the first. "You will notice that you have several 'invites' to share to our beta."
+
+"Perhaps after it has spread around we can talk about second round funding," said the second.
+
+The emperor agreed, and dutifully "invited" some of his relatives and courtiers to the beta. He was sure to say that this was, indeed, <em>The New New Web</em>, and that only those "with clue" could "get it."
+
+Needless to say, all of his invitees gladly proclaimed that they, too, "get it", and began to invite others to the Emperor's New Web.
+
+All over the empire, everyone began to flock to the Emperor's New Web, and everyone said they "got it," and were not about to admit they did not have "clue."
+
+One day, they threw a New New Web Conference, and gathered together to talk about important things like well-styled XHTML, the use of gradients in company logos, tag clouds, and social networks. While the emperor himself was giving the keynote of the highlights of the New New Interweb, a young boy in the crowd proclaimed loudly:
+
+"But it's just the same as the old web! There isn't anything new at all!"
+
+There was an awkward pause, and then the crowd began to laugh. "Pay no attention to him," they said. "He's just a boy. He doesn't 'get it'."
+
+"Sure it's shiny," said the boy, "But shiny is not enough to call it a Whole New Web."
+
+"It has social networking and tagging!" said someone.
+
+"Social networking is not new," said the boy. "Bulletin boards are an example older as old as my parents. And surely <em>tags</em> alone are not... the Whole New Web?"
+
+"It has Ajax and fancy JavaScript effects!" said someone else.
+
+"And those... programming languages and effects that are caught on but are not 'new' at all -- those are all that you are calling the New New Web?" asked the boy.
+
+The emperor decided it was time to speak. "But it is the <em>combination</em> of all these elements, together, that is new."
+
+The boy seemed perplexed. "Is it?" he asked.
+
+The emperor stammered. The crowd began to murmur and to look suspiciously at the emperor, and at the large plasma screen which displayed a page of the Emperor's New Web.
+
+Suddenly, the emperor said, "Also, I would like to announce that I am providing first round venture capital for entrepreneurs who are developing applications for the New New Web!"
+
+At this, everyone in the crowd proclaimed, "Ah! Now we see it! There it is -- it's the New New Interweb!" And they began to rush forward to display their Powerpoint presentations.
+
+And that is the story of the Emperor's New Web.

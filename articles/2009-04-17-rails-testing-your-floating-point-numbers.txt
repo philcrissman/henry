@@ -1,0 +1,26 @@
+--- 
+title: "Rails: Testing Your Floating Point Numbers"
+date: 17/04/2009
+
+You're being a Good Software developer and diligently testing all your code, and lo and behold, you get this result to one of your tests:
+
+<code>
+1) Failure: ... &lt;1.0&gt; expected but was &lt;1.0&gt;
+</code>
+
+An annoying problem with floats that might look and for all practical purposes be equal, but internally as stored by the computer are not <em>precisely</em> equal.
+
+You're probably using:
+
+<pre lang="ruby">
+assert_equal 1.0, a_value_expected_to_be_1.0
+</pre>
+
+Instead, use:
+
+<pre lang="ruby">
+assert_in_delta 1.0, a_value_expected_to_be_1.0, 0.000001
+</pre>
+
+Though, you may also want to ask yourself if you really need to be using floating point numbers; but assuming that you <em>do</em> need them, <code>assert_in_delta</code> will compensate for the annoying fact that floating point numbers might not actually be precisely what you expect them to be.
+

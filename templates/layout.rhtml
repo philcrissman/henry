@@ -2,11 +2,29 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <script language="javascript" src="/js/jquery-1.4.1.min.js"> </script>
+    <script language="javascript" src="/js/app.js"> </script>
     <link rel="alternate" type="application/atom+xml" title="<%= title %> - feed" href="/index.xml" />
     <title><%= title %></title>
   </head>
   <body>
-    <section>
+    <div id="stuff">
+      <img src="/images/phil_pic_sq.jpg" align="right" width="100" style="margin: 20px 10px 0 0" />
+      <ul>
+        <li><a href="/blog">Blog</a></li>
+        <!-- <li><a href="/about">About</a></li> -->
+        <li><a href="/archives">Archives</a></li>
+      </ul>
+      
+      &nbsp;<br/>
+    </div>
+    <br/>
+    <span style="margin: 15px 0 0 0"><a href="#" id="show">&#9757;</a></span>
+    <!-- <p style="clear:both;margin:0 0 10px 0">&nbsp;</p> -->
+    <header id="header">
+      <h1><a href="/">philcrissman.com</a></h1>
+    </header>
+    <section id="content">
       <%= yield %> 
     </section>
     <footer>
