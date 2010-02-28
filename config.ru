@@ -15,7 +15,8 @@ module Toto
       type = :xml # override!
       case type
         when :html
-          {:articles => self.articles.reverse.map do |article|
+          # doesn't make sense, but it seemed to be working before...
+          {:articles => self.articles.map do |article|
               Article.new article, @config
           end }.merge archives
         when :xml, :json
