@@ -28,7 +28,7 @@ module Toto
     def feed type = :xml
       case type
       when :html
-        :articles => self.articles.reverse.map do |article|
+        return :articles => self.articles.reverse.map do |article|
           Article.new article, @config
         end
       when :xml, :json
