@@ -11,6 +11,20 @@ end
 
 module Toto
   class Site
+    def index type = :html
+      case type
+        when :html
+          {:articles => self.articles.reverse.map do |article|
+              Article.new article, @config
+          end }.merge archives
+        when :xml, :json
+          return :articles => self.articles.reverse.map do |article|
+            Article.new article, @config
+          end
+        else return {}
+      end
+    end
+  
     def blog type = :html
       case type
         when :html
@@ -81,7 +95,7 @@ toto = Toto::Server.new do
   # 
    set :author,    ENV['USER']                               # blog author
    set :title,     "philcrissman.com"                        # site title
-   set :root,      "index"                                   # page to load on /
+   set :root,      "main"                                   # page to load on /
   # set :date,      lambda {|now| now.strftime("%d/%m/%Y") }  # date format for articles
   # set :markdown,  :smart                                    # use markdown + smart-mode
   # set :disqus,    false                                     # disqus id, or false
