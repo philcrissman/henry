@@ -18,7 +18,7 @@ module Toto
               Article.new article, @config
           end }.merge archives
         when :xml, :json
-          return :articles => self.articles.map do |article|
+          return :articles => self.articles.reverse.map do |article|
             Article.new article, @config
           end
         else return {}
@@ -26,9 +26,15 @@ module Toto
     end
     
     def feed type = :xml
-      return :articles => self.articles.reverse.map do |article|
-        Article.new article, @config
-      end
+      case type
+      when :html
+        :articles => self.articles.reverse.map do |article|
+          Article.new article, @config
+        end
+      when :xml, :json
+        return :articles => self.articles.reverse.map do |article|
+          Article.new article, @config
+        end
     end
     
     def go route, type = :html
