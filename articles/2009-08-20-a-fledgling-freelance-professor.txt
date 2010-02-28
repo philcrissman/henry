@@ -1,0 +1,22 @@
+--- 
+title: A Fledgling Freelance Professor
+date: 20/08/2009
+
+<blockquote>[_why] is a fledgling freelance professor, one who will die young and make no lasting impression. except there was that time when i vacuumed all of Greenland for them.<br /><em>bio from the blog that formerly lived at whytheluckystiff.net</em></blockquote>
+
+<blockquote>Unit testing, in particular, is designed to reel in spontaneous hacking. It is like framing a picture before it has been painted. Hacking, at heart, will continue to be something of spontaneous order, something of anarchy, and the landscape of hacking is something which comes from human action but is not of human design.<br /><em>From "This Hack was not properly planned," quoted on <a href="http://anarchaia.org/archive/2007/12/25.html">Anarchaia</a></em></blockquote>
+
+<blockquote>
+No, let's not have rules. I don't feel comfortable with having coding standards or any protocol on Camping. The point of Camping is to have very ugly, tricky code that goes against all the rules that people make for "beautiful" code these days. To show that ugly code can do beautiful things, maybe.
+
+I don't want to demonize anyone here, I just want to express the ideas that make Camping different. Camping's personality is 80x50. It is like the little gears of a watch that are all meshed together into a tight little mind-bending machine. The challenge of Camping isn't to figure out how to automate obfuscation. The challenge is to bring new tricks into the code that push Ruby's parser and make everyone look twice. Not all code needs to be a factory, some of it can just be origami.
+
+_why
+<br /><em>From <a href="http://kneath.tumblr.com/post/167536641/no-lets-not-have-rules-i-dont-feel">Kyle Neath's</a> tumblr.</em>
+</blockquote>
+
+<a href="http://en.wikipedia.org/wiki/Why_the_lucky_stiff">Why the lucky stiff</a>
+
+<a href="http://ejohn.org/blog/eulogy-to-_why/">John Resig's eulogy to _why</a>
+
+

@@ -185,11 +185,21 @@ ul, li {
 code {
   font-family: 'Inconsolata', 'Anonymous Pro', 'Bitstream Vera Sans', 'Monaco', Courier, mono;
 }
+
 pre {
   padding: 20px;
 }
+
 blockquote {
-  font-style: italic;
+  background: transparent url(/images/quote.png) top left no-repeat;
+  margin: 5px 0 5px 0;
+  padding: 0 0 0 40px;
+}
+
+blockquote:after {
+  text-align: center;
+  clear:both;
+  content: '\0009 \2767 ';
 }
 
 body > footer {
