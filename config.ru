@@ -28,13 +28,14 @@ module Toto
     def feed type = :xml
       case type
       when :html
-        return :articles => self.articles.reverse.map do |article|
+        :articles => self.articles.reverse.map do |article|
           Article.new article, @config
         end
       when :xml, :json
         return :articles => self.articles.reverse.map do |article|
           Article.new article, @config
         end
+      end
     end
     
     def go route, type = :html
