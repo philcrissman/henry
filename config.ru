@@ -12,18 +12,18 @@ end
 module Toto
   class Site
     def index type = :xml
-      # type = :xml # override!
-      # case type
-      #   when :html
-      #     {:articles => self.articles.reverse.map do |article|
-      #         Article.new article, @config
-      #     end }.merge archives
-      #   when :xml, :json
-      #     return :articles => self.articles.reverse.map do |article|
-      #       Article.new article, @config
-      #     end
-      #   else return {}
-      # end
+      type = :xml # override!
+      case type
+        when :html
+          {:articles => self.articles.reverse.map do |article|
+              Article.new article, @config
+          end }.merge archives
+        when :xml, :json
+          return :articles => self.articles.reverse.map do |article|
+            Article.new article, @config
+          end
+        else return {}
+      end
     end
   
     def blog type = :html
