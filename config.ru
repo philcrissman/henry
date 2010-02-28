@@ -20,7 +20,7 @@ module Toto
               Article.new article, @config
           end }.merge archives
         when :xml, :json
-          return :articles => self.articles.reverse.map do |article|
+          return :articles => self.articles.map do |article|
             Article.new article, @config
           end
         else return {}
@@ -34,7 +34,7 @@ module Toto
               Article.new article, @config
           end }.merge archives
         when :xml, :json
-          return :articles => self.articles.reverse.map do |article|
+          return :articles => self.articles.map do |article|
             Article.new article, @config
           end
         else return {}
@@ -49,7 +49,7 @@ module Toto
             Article.new article, @config
           end }.merge archives # why?
         when :xml, :json
-          return :articles => self.articles.reverse.map do |article|
+          return :articles => self.articles.map do |article|
             Article.new article, @config
           end
         else return {}
