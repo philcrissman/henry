@@ -1,0 +1,8 @@
+--- 
+title: Hello Toto
+date: 28/02/2010
+
+Moving this blog over to Toto. I did not move all the posts, but I don't think there's a big loss for the ones I neglected, and you can alway spend time looking for cached or archived pages if it Really Matters. Sorry.
+
+Was having some trouble getting the feed to worked automagically, we'll see what has happened there when it goes live.
+

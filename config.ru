@@ -45,7 +45,7 @@ module Toto
       type = :xml # override! will this work?
       case type
         when :html
-          {:articles => self.articles.map do |article|
+          {:articles => self.articles.reverse.map do |article|
             Article.new article, @config
           end }.merge archives # why?
         when :xml, :json
