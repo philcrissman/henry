@@ -26,7 +26,9 @@ module Toto
     end
     
     def feed type = :xml
-      return index(type)
+      return :articles => self.articles.reverse.map do |article|
+        Article.new article, @config
+      end
     end
     
     def go route, type = :html
