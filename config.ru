@@ -42,9 +42,16 @@ module Toto
     
     def feed type = :xml
       type = :xml # override! will this work?
-      return :articles => self.articles.reverse.map do |article|
-        Article.new article, @config
-      end
+      case type
+        when :html
+          {:articles => self.articles.map do |article|
+            Article.new article, @config
+          end }.merge archives # why?
+        when :xml, :json
+          return :articles => self.articles.reverse.map do |article|
+            Article.new article, @config
+          end
+        else return {}
     end
     
     def go route, type = :html
