@@ -52,6 +52,7 @@ module Toto
             Article.new article, @config
           end
         else return {}
+      end
     end
     
     def go route, type = :html
