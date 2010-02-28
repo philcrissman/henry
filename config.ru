@@ -16,11 +16,11 @@ module Toto
       case type
         when :html
           # doesn't make sense, but it seemed to be working before...
-          {:articles => self.articles.map do |article|
+          {:articles => self.articles.reverse.map do |article|
               Article.new article, @config
           end }.merge archives
         when :xml, :json
-          return :articles => self.articles.map do |article|
+          return :articles => self.articles.reverse.map do |article|
             Article.new article, @config
           end
         else return {}
@@ -34,7 +34,7 @@ module Toto
               Article.new article, @config
           end }.merge archives
         when :xml, :json
-          return :articles => self.articles.map do |article|
+          return :articles => self.articles.reverse.map do |article|
             Article.new article, @config
           end
         else return {}
@@ -49,7 +49,7 @@ module Toto
             Article.new article, @config
           end }.merge archives # why?
         when :xml, :json
-          return :articles => self.articles.map do |article|
+          return :articles => self.articles.reverse.map do |article|
             Article.new article, @config
           end
         else return {}
