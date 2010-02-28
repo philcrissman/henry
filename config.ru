@@ -108,7 +108,7 @@ toto = Toto::Server.new do
    set :title,     "philcrissman.com"                        # site title
    set :root,      "main"                                   # page to load on /
   # set :date,      lambda {|now| now.strftime("%d/%m/%Y") }  # date format for articles
-  # set :markdown,  :smart                                    # use markdown + smart-mode
+  set :markdown,  :smart                                    # use markdown + smart-mode
   set :disqus,    "philcrissman"                                     # disqus id, or false
   # set :summary,   :max => 150, :delim => /~/                # length of article summary and delimiter
   # set :ext,       'txt'                                     # file extension for articles
