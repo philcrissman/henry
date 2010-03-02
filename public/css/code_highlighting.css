@@ -1,0 +1,92 @@
+pre {
+	border: 1px solid black;
+	border-color: #BBB #DDD #DDD #BBB;
+	margin : 0em;
+	padding : 1em;
+	line-height: 1.5;
+/*  background: white !important;*/
+	overflow: auto;
+/*  color: black !important;*/
+	color: #FFFFFF !important;
+	background-color: #002240 !important;
+}
+
+code {
+	font-size: 1.2em;
+}
+
+.javascript .comment, .ruby .comment {
+/*  color : green;*/
+  color: #0088FF;
+	font-style: italic;
+}
+
+.javascript .string, .ruby .string {
+/*  color : teal;*/
+  color: #3AD900;
+}
+
+.javascript .keywords, .ruby .keywords {
+/*  color : purple;*/
+  color: #FF9D00;
+}
+
+.javascript .global {
+/*  color : blue;*/
+  color: #CCCCCC;
+}
+
+.javascript .brackets, .ruby .brackets {
+/*  color : navy;*/
+  color: #E1EFFF;
+}
+
+.css .comment {
+/*  color : gray;*/
+  color: #0088FF;
+	font-style: italic;
+}
+
+.css .properties {
+/*  color : navy;*/
+  color: #9DF39F;
+}
+
+.css .selectors {
+/*  color : maroon;*/
+	font-weight : bold;
+	color: #9EFFFF;
+}
+
+.css .units {
+	/*color :red;*/
+	color: #F6F080;
+}
+
+.css .urls {
+/*  color :green;*/
+  color: #3AD900;
+}
+
+.html .tag {
+/*  color : purple;*/
+  color: #73817D;
+}
+
+.html .comment {
+/*  color : gray;
+  font-style: italic;
+*/
+  color: #0088FF;
+	font-style: italic;
+}
+
+.html .string {
+/*  color : navy;*/
+  color: #3AD900;
+}
+
+.html .doctype {
+/*  color : teal;*/
+  color: #73817D;
+}

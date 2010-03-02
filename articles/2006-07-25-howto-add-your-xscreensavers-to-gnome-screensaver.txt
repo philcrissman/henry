@@ -13,9 +13,11 @@ Each screensaver, for both gnome-screensaver and xscreensaver, has a config file
 
 Moving the screensavers is the easy part; all you'd need to do is:
 
+<pre>
 <code>
 cp -i /usr/lib/xscreensaver/* /opt/gnome/lib/gnome-screensaver/gnome-screensaver/
 </code>
+</pre>
 
 Yes, technically this code <em>copies</em> the screensavers, not moves them... but that's okay. The -i switch is to make the process interactive; if any other the new screensavers has the same name as an existing one, it will as if you want to overwrite it, rather than just deciding for you. There should be only one such anomaly: popsquares. I chose not to overwrite it, as it works fine already and is probably exactly the same.
 
@@ -32,14 +34,19 @@ Just click the "download" links on the above two pages. I moved the two files to
 
 You'll need to make migrate-xscreensaver-config.sh executable (it should go without saying, but you'll need to execute the following command from whatever directory you put the files in):
 
-<div class="code2"># chmod +x migrate-xscreensaver-config.sh</div>
+<pre>
+<code class="code2">
+# chmod +x migrate-xscreensaver-config.sh
+</code>
+</pre>
 
 That being done, all you'll have left is:
 
-<div class="code2"># cd /opt/gnome/share/gnome-screensaver/themes/
+<pre>
+<code># cd /opt/gnome/share/gnome-screensaver/themes/
 # /opt/gnome/lib/gnome-screensaver/migrate-xscreensaver-config.sh /etc/xscreensaver/*.xml
-</div>
-
+</code>
+</pre>
 That's that. You will find (at least on SLED 10) that you need to restart X -- just logging out of Gnome and back in should do it.
 
 If you're attempting to use these steps on a different version of linux, you may need to use find or locate to figure out the proper file paths to use. Enjoy.

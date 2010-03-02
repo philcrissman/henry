@@ -8,14 +8,18 @@ I certainly can't claim to have <em>discovered</em> these tips; but they've been
 
 Lets say you're passing a collection to a partial, but that somewhere in that partial you are interested in knowing which index you're at. Do you need to implement a counter? Nope; there already is one. A collection passed to a partial implicitly creates a counter called <code>[partial_name]_counter</code>. So, if you called with
 
-<pre lang="ruby">
+<pre>
+<code class="ruby">
 < %= render :partial => 'thing', :collection => @a_few_of_my_favorite_things %>
+</code>
 </pre>
 
 then in your partial, you could use:
 
-<pre lang="ruby">
+<pre>
+<code class="ruby">
 < %= thing_counter %>
+</code>
 </pre>
 
 to return the index as you plow through the collection. Life is good. Rails is looking out for you. (Hat tip to <a href="http://gmarik.blogspot.com/2007/09/rails-collection-index-within-partial.html">GMarik</a>, which is where I saw this one.)
@@ -24,9 +28,11 @@ to return the index as you plow through the collection. Life is good. Rails is l
 
 Today I found myself wanting to take a string, let's say <code>"Thing"</code>, and use it as a class name, <code>Thing</code>. Again, it turns out this can be done. In Ruby, class names are constants, so you can do 
 
-<pre lang="ruby">
+<pre>
+<code class="ruby">
 str = "Thing" #=> "Thing"
 Kernel.const_get(str) #=> Thing
+</code>
 </pre>
 
 Hooray!
@@ -37,22 +43,28 @@ Find yourself writing long, complicated find expressions in your code? There is 
 
 Perhaps in your code... maybe even in a view... maybe you want to find all <code>Things</code> that don't belong to the current use, and which are flagged with some property, and you're temped to write something like:
 
-<pre lang="ruby">
+<pre>
+<code class="ruby">
 Thing.find(:all, :conditions => ["user != ? and flag = true", current_user])
+</code>
 </pre>
 
 What we could do is put some <code>has_finder</code>s in the Thing model, something like
 
-<pre lang="ruby">
+<pre>
+<code class="ruby">
 class Thing < ActiveRecord::Base
 has_finder :exclude_user, lambda {|user| {:conditions => "things.user_id != #{user.id}"}
 has_finder :with_flag, :conditions => "things.flag = true"
+</code>
 </pre>
 
 Having done that, you could now replace that first bit with:
 
-<pre lang="ruby">
+<pre>
+<code class="ruby">
 Thing.find(:all).with_flag.exclude_user(current_user)
+</code>
 </pre>
 
 It's a little shorter, sure, but more importantly, when you read it, it just makes more sense. A completely new person coming to look at this line would have a good idea what it was doing without even looking in the model to see what the <code>has_finder</code>s were doing.

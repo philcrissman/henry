@@ -20,7 +20,7 @@ end
 Thing.message(:whatever)
 </code>
 </pre>
-<!--more-->
+
 David mention's attr_accessor in this context, so I thought I'd try that. Open <code>irb</code>:
 
 <pre lang="ruby">

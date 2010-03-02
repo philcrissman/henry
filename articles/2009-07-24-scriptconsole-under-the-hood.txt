@@ -8,7 +8,7 @@ Photo by <a href="http://www.flickr.com/photos/steffe/">Steffe</a>
 I've recently started digging into script/console a little deeper. As a tool for Rails development, I think it's safe to say that words like "indispensable" come to mind when the topic of the console arises. That said, I've yet to see a really complete guide to using script/console -- lots and lots of collections of tips and tricks, but never a good solid guide to what's going on with script/console.
 
 This is the first of what will hopefully be several posts about what's really going on when you open the rails console.
-<!--more-->
+
 If we look at just the console script, we'll find just these three lines:
 
 <pre>

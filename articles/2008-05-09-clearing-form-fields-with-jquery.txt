@@ -8,12 +8,14 @@ Then I was requested to make it so that when the field was clicked on, the word 
 
 It turns out that with jQuery, this is simple enough; let's assume your field has the class "clearme":
 
-<pre lang="javascript" line="1">
+<pre>
+<code class="javascript" line="1">
 $(document).ready(function () {
   $('.clearme').focus(function() {
     $(this).val("");
   });
 });
+</code>
 </pre>
 
 If you're familiar with jQuery, you know that the wrapper <code>$(document).ready()</code> simply waits until the page is finished loading, then executes the function you've passed to it. In this case, the function passed looks for an item of the class "clearme" and waits for that element to receive focus. When it does, it changes the value to "".
@@ -22,10 +24,11 @@ Simple enough... but wait! Now if the user types in "Beauregard Charles Maurice"
 
 There may be multiple ways; but jQuery has a handy method called "one" which will execute an event <em>one time only</em>, which sounds like just what we want. So we'd change the body of that inner function to look like:
 
-<pre lang="javascript" line="1">
+<pre>
+<code class="javascript" line="1">
 $('.clearme').one("focus", function() {
   $(this).val("");
 });
+</code>
 </pre>
-
 

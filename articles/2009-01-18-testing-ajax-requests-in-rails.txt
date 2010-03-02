@@ -14,10 +14,12 @@ Well.
 
 What I should have been writing, all along, was:
 
-<pre lang="ruby">
+<pre>
+<code class="ruby">
 xhr :post, :create, 
   :whatever_id => @thing.id, 
   :our_model => {:stuff => "stuff"}
+</code>
 </pre>
 
 It's always the little things.
