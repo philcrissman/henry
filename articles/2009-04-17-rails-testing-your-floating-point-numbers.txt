@@ -15,9 +15,9 @@ An annoying problem with floats that might look and for all practical purposes b
 You're probably using:
 
 <pre>
-<code  class="ruby">
+<code class="ruby">
 assert_equal 1.0, a_value_expected_to_be_1.0
-</class>
+</code>
 </pre>
 
 Instead, use:
