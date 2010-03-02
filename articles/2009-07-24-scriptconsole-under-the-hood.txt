@@ -2,7 +2,7 @@
 title: script/console, Under The Hood
 date: 24/07/2009
 
-<img src="/images/posts/3618515225_6446a9876b.jpg" />
+<img src="http://philcrissman.com/images/posts/3618515225_6446a9876b.jpg" />
 Photo by <a href="http://www.flickr.com/photos/steffe/">Steffe</a>
 
 I've recently started digging into script/console a little deeper. As a tool for Rails development, I think it's safe to say that words like "indispensable" come to mind when the topic of the console arises. That said, I've yet to see a really complete guide to using script/console -- lots and lots of collections of tips and tricks, but never a good solid guide to what's going on with script/console.
@@ -11,10 +11,12 @@ This is the first of what will hopefully be several posts about what's really go
 <!--more-->
 If we look at just the console script, we'll find just these three lines:
 
-<pre lang="ruby">
+<pre>
+<code class="ruby">
 #!/usr/bin/env ruby
 require File.dirname(__FILE__) + '/../config/boot'
 require 'commands/plugin'
+</code>
 </pre>
 
 The first line is simply the shebang line that lets the file be an executable ruby script. The second line requires the file config/boot. This file is a little over a hundred lines by default, so we won't reproduce it here; you can read it quickly (if you want to) in one of your own rails projects. It basically sets some load paths and some constants, and ends by booting rails with <code>Rails.boot!</code>.
@@ -28,7 +30,8 @@ You can find <code>commands/console.rb</code> in <code>railties/lib</code> in yo
 
 <code>console.rb</code> looks like this:
 
-<pre lang="ruby">
+<pre>
+<code class="ruby">
 irb = RUBY_PLATFORM =~ /(:?mswin|mingw)/ ? 'irb.bat' : 'irb'
 
 require 'optparse'
@@ -74,6 +77,7 @@ else
   puts "Loading #{ENV['RAILS_ENV']} environment (Rails #{Rails.version})"
 end
 exec "#{options[:irb]} #{libs} --simple-prompt"
+</code>
 </pre>
 
 There's a fair bit in there, so let's look at what it's doing in detail.
@@ -108,8 +112,10 @@ But wait, you might say. Other than print a message, it doesn't do anything; wha
 
 There's only one line left: an <code>exec</code> expression. exec is going to execute the string you pass to it on the command line. So a plain vanilla run of script/console is actually running:
 
-<pre lang="ruby">
+<pre>
+<code  class="ruby">
 irb -r irb/completion -r ~/your_rails_project_path/config/environment -r console_app -r console_with_helpers --simple_prompt
+</code>
 </pre>
 
 If you really want to, you could just type all that every time you want to use the console, but I'm guessing you'll stick with script/console.

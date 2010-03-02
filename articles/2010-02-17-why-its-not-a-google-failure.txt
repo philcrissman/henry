@@ -36,7 +36,7 @@ Besides that, there is an unwritten contract implied by Google's search listings
 
 <em>But wait,</em> you might say. <em>They could do something along the same lines as the "Did you mean: [this]? that they already attempt to do for common mispellings..."</em>. 
 
-<img src="/images/posts/didyoumean.png" alt="" title="Screen shot 2010-02-16 at 10.49.12 PM" width="248" height="140" />
+<img src="http://philcrissman.com/images/posts/didyoumean.png" alt="" title="Screen shot 2010-02-16 at 10.49.12 PM" width="248" height="140" />
 <br />
 <small>Oh, yeah, that *is* what I meant.</small><br />
 
@@ -62,7 +62,7 @@ It is okay to expect your users to have a basic understanding of the core functi
 <strong>User:</strong> Hey, that's just what I was looking for. Thanks Google!
 <strong>Google:</strong> Yes, well. That did work out pretty nicely. Actually, I hope it works that well every time, but you should understand that I'm just giving you a list of what I <em>think</em> will be the most relevant results, based on your query, and it might... hello? Hello?
 
-<a href="http://www.overcompensating.com/posts/20100216.html"><img src="/images/posts/oc20100216.png" alt="" title="oc20100216" width="490"  /></a>
+<a href="http://www.overcompensating.com/posts/20100216.html"><img src="http://philcrissman.com/images/posts/oc20100216.png" alt="" title="oc20100216" width="490"  /></a>
 <small>I used to have to log on to the internet uphill, both ways.</small>
 
 Listen, I understand that it's challenging. I don't actually think "non-technical" people are "stupid," any more than a tailor would think a programmer was "stupid" for being bewildered when sat down in front of a state of the art sewing machine. But if I'm going to insist on using the sewing machine, the tailor will try to tell me how to use it. If I continue to try to use it incorrectly, the tailor will eventually want to give up on me, unless I'm able to grasp <em>at least</em> the basic principles of how the thing works. 
@@ -85,7 +85,7 @@ Funkatron, <a href="http://funkatron.com/site/comments/were-the-stupid-ones-face
 
 This is the point exactly. If we really expect that Google should "just know" what we want, we are expecting it to be magical. We are asking for something that belongs to the realm of unicorns and rainbows with pots of gold at the end.
 
-<img src="/images/posts/unicorn.jpg" alt="" title="unicorn" width="259" height="300" style="margin:0px auto" /><br />
+<img src="http://philcrissman.com/images/posts/unicorn.jpg" alt="" title="unicorn" width="259" height="300" style="margin:0px auto" /><br />
 <small>Magic Google Power!</small>
 
 At the risk of sounding like an asshole again, <span style="font-size:1.5em;">it's called a <strong>search engine</strong>, not a <strong>finding engine</strong>. It cannot read your mind. If you expect it to be able to read your mind, you are stepping outside the bounds of what can reasonably be expected from a machine. The famous button is "I'm <strong>feeling lucky</strong>," not "<strong>Take me to exactly the page I'm thinking about in my brain</strong>."</span>
@@ -114,7 +114,7 @@ Now, at some point, some wonderful person who designs these machines said, <em>Y
 
 Is the new design, where it is (almost) impossible to run your card incorrectly, better? Absolutely it is. It's improved.
 
-<img src="/images/posts/credit_card_swipe.jpg" alt="" title="credit_card_swipe" width="455" height="350" /><br />
+<img src="http://philcrissman.com/images/posts/credit_card_swipe.jpg" alt="" title="credit_card_swipe" width="455" height="350" /><br />
 <small>Hey, now that's pretty handy.</small>
 
 Was the old design wrong? Was it a failure on the part of the gas pump card reader designers? I'm going to say <strong>no</strong>. It wasn't wrong. It did what it was supposed to do, and asked only that the user glance at the diagram to know which way to put the stripe in to the card reader. There was room for improvement, and it was indeed improved, but it was not "wrong."

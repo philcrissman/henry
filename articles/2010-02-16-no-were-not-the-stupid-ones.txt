@@ -4,7 +4,7 @@ date: 16/02/2010
 
 Update: follow up post on <a href="/2010/02/17/why-its-not-a-google-failure">why it's not a Google failure</a>.
 
-<img src="/images/posts/wrong-mike.jpg" alt="From http://icanhascheezburger.com/2007/04/28/youre-doing-it-wrong-2/" title="doing-it-wrong" width="500" height="270" class="center size-full wp-image-2094" />
+<img src="http://philcrissman.com/images/posts/wrong-mike.jpg" alt="From http://icanhascheezburger.com/2007/04/28/youre-doing-it-wrong-2/" title="doing-it-wrong" width="500" height="270" class="center size-full wp-image-2094" />
 
 If you follow the same flow of information I do, you probably saw the article <a href="http://www.lastpodcast.net/2010/02/10/facebook-login-is-hard-welcome-to-idiocracy/">Facebook login is hard</a>, or are at least aware of the confusion it's talking about. Just in case, for context: last week <a href="http://www.readwriteweb.com/archives/facebook_wants_to_be_your_one_true_login.php">a ReadWriteWeb article</a> became the top-listed result on Google for "Facebook Login", and several hundred (just going off the number of comments) Facebook users wound up at ReadWriteWeb trying unsuccessfully to log in to facebook, eventually leaving comments venting their frustration. <em>(Aside: my favorite was the one who found the "right" way to get to facebook, now: search for it on Bing instead...)</em>
 
@@ -18,7 +18,7 @@ Not (for example) with this:
 
 <blockquote>Isn't this really a failure of Google? (From <a href="http://funkatron.com/site/comments/were-the-stupid-ones-facebook-google-and-our-failure-as-developers/">We're the stupid ones</a>)</blockquote>
 
-<img src="/images/posts/bush_doing_it_wrong.jpg" alt="" title="bush_doing_it_wrong" width="150" height="150" align="right" style="margin-left: 5px;"  />No. <em><strong>It's not a failure of Google</strong></em>. <strong>RWW wrote an article about Facebook Connect &mdash; about logging in with Facebook &mdash; and said article became a top result for the phrase "Facebook login" on Google.</strong> That is an example of Google <em>working as it is intended to work</em>.
+<img src="http://philcrissman.com/images/posts/bush_doing_it_wrong.jpg" alt="" title="bush_doing_it_wrong" width="150" height="150" align="right" style="margin-left: 5px;"  />No. <em><strong>It's not a failure of Google</strong></em>. <strong>RWW wrote an article about Facebook Connect &mdash; about logging in with Facebook &mdash; and said article became a top result for the phrase "Facebook login" on Google.</strong> That is an example of Google <em>working as it is intended to work</em>.
 
 I think it's fine if people use a search engine field as a sort of web-based CLI; heck I use it for that, if I'm looking for a site and don't remember if it's <em>.com</em> or <em>.net</em> or <em>.info</em>, or if it's <em>somethingapp.com</em> or <em>somethinghq.com</em> or <em>getsomething.com</em>, and hey, if I <strong>know</strong> that it'll come up if I simply search for it, then yes: why not. Search is quicker than having to try even one extra URL because the first one you used the wrong TLD. So using a search engine to find your website: fine, go for it. I'm not arguing that this should be discouraged. <em>(That said, I believe there have been studies showing that people actually also search for fully qualified URLs, like "myspace.com," and really, it does seem like someone should tell those folks about the address bar... but I digress.)</em>
 
@@ -26,7 +26,7 @@ Facebook evidently has somewhere in the neighborhood of a bazillion users, now. 
 
 This is not to say that these people are not important, only that it is okay to expect them to learn how to use the internet. <span style="font-size:1.5em;font-weight:bold;">It is okay to expect people to invest a little time to learn how stuff works and to retain an adequate portion of that education.</span>
 
-<small>Just because it's photoshopped doesn't mean it's not funny.</small><img src="/images/posts/elephants-larger-than-the-moon.jpg" alt="" title="elephants-larger-than-the-moon" width="500" class="aligncenter size-full wp-image-2101" />
+<small>Just because it's photoshopped doesn't mean it's not funny.</small><img src="http://philcrissman.com/images/posts/elephants-larger-than-the-moon.jpg" alt="" title="elephants-larger-than-the-moon" width="500" class="aligncenter size-full wp-image-2101" />
 
 Take ReadWriteWeb. I don't know if they'd win an <em>award</em> for UI or UX, but they don't suck. I think that it's fairly clear that ReadWriteWeb is a distinct website named <em>ReadWriteWeb</em>. I don't think we should have expected them to introduce a flashing banner warning visitors: ATTENTION -- THIS SITE IS NOT ACTUALLY FACEBOOK. They wrote an article, that article got some google juice. All in all, they're doing what they set out to do, writing stuff that is findable to the people who are looking for it.
 

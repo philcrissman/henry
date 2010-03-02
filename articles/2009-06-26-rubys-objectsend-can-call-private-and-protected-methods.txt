@@ -9,7 +9,8 @@ One of the hallmarks of object oriented programming in most every implementation
 
 I guess there are a few posts floating around about it, but I discovered it by accident playing around in irb this evening. I was reading David A. Black's The Well Grounded Rubyist, where he mentions that you could send a message to a class either within the class definition itself, or by simply sending it to the class object like you'd send any other message:
 
-<pre lang="ruby">
+<pre>
+<code class="ruby">
 # The normal way to do it
 class Thing
   message :whatever
@@ -17,6 +18,7 @@ end
 
 # you could also do this
 Thing.message(:whatever)
+</code>
 </pre>
 <!--more-->
 David mention's attr_accessor in this context, so I thought I'd try that. Open <code>irb</code>:

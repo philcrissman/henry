@@ -2,7 +2,7 @@
 title: Dumb Results Can Be Better Than Smart Results
 date: 18/02/2010
 
-<img src="/images/posts/find_x.jpg" alt="" title="find_x" width="394" /><br />
+<img src="http://philcrissman.com/images/posts/find_x.jpg" alt="" title="find_x" width="394" /><br />
 
 The last couple posts have crossed over into a couple really big topics; one is web application usability, the other is the quality of results returned by an algorithm. They are not the same topic. Anything that can be made more usable should be. The quality of an algorithm's results are not necessarily related to that. I started chatting with <a href="http://twitter.com/KuraFire">@Kurafire</a> about this, and he is making some great points... but I still don't precisely agree.
 
