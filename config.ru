@@ -91,6 +91,10 @@ module Toto
     end
     
   end
+  
+  class Article
+    def path()    self[:date].strftime("/%Y/%m/%d/#{slug}") end
+  end
 end
 
 #
