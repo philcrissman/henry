@@ -1,0 +1,6 @@
+--- 
+title: xwing
+date: 01/04/2010
+
+<img src="images/B0CsT.jpg" />
+
