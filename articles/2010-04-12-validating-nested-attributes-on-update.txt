@@ -1,0 +1,71 @@
+--- 
+title: Validating Nested Attributes on Update
+date: 12/04/2010
+
+So, let's say you have a model, and a has_many relationship to another model. You want to accept nested attributes for the child models in your forms, and you also want to validate that the children must be present; the parent model can't be saved unless it has _at least one_ of the child model associated. Easy enough, right?
+
+<pre>
+<code class="ruby">
+class Parent < ActiveRecord::Base
+  has_many :children
+  
+  accepts_nested_attributes_for :children, :allow_destroy => true
+  
+  validates_presence_of :children
+end
+
+class Child < ActiveRecord::Base
+  belongs_to :parent
+end
+</code>
+</pre>
+
+That's not too bad. But the thing is, this will validate presence of the children on create, but not on update...
+
+<pre>
+<code class="ruby">
+>> p = Parent.new # note: no children
+=> #&lt;Parent id:nil ... >
+>> p.save!
+=> # errors glaore
+>> p2 = Parent.find(:last)
+=> #&lt;Parent id:23 ... >
+>> p2.update_attributes("childen_attributes" => {"0" => {:_destroy => 1}, [... etc. Assume all children are sent a destroy flag here]})
+=> true # what! it saved?
+>> p2.valid?
+=> false # what! it's saved, but not valid anymore... (because it has no children)
+</code>
+</pre>
+
+So, the trouble is (I think), when you save the existing Parent, at the moment validation is checked, there are still children. They won't be deleted until .save is called. So the object is valid. Then after it's saved, the children have been deleted, and the object is saved, but it is no longer valid. What to do?
+
+Well, after some pondering, I wound up with this (in the update method):
+
+<pre>
+<code class="ruby">
+class ParentsController < ApplicationController
+  # other methods...
+  
+  def update
+    @parent = Parent.find(params[:id])
+    
+    # assign the attributes _without trying to save_
+    @parent.attributes = params[:parent]
+    
+    # this line winds up as true if all items are marked for deletion; otherwise, false
+    reject = @parent.children.inject(true){|truthiness, n| !!(truthiness && n.marked_for_destruction?) }
+    
+    # check reject's truthiness first. Only try to save if reject is false. 
+    # If we save first, it will save even though items will all be deleted.
+    if !reject && @parent.save(params[:order_form])
+      flash[:notice] = "Object updated"
+      redirect_to parent_path(@parent)
+    else
+      flash[:notice] = "Object could not be saved"
+      render :action => :edit
+    end
+end
+</code>
+</pre>
+
+Now, checking for an objects validity in the controller seems wrong to me, too, but it works. Anyone who has run into this find another way to do it?
