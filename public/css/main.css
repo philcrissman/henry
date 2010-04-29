@@ -8,8 +8,8 @@ body {
   font-size: 16px;
   line-height: 30px;
   padding: 15px;
-  color: #333;
-  text-shadow: #bbb 1px 1px 2px;
+  color: #222;
+  text-shadow: #ddd 1px 1px 2px;
   text-align: center;
 }
 header, footer, section, article {
@@ -191,10 +191,12 @@ ul, li {
 }
 code {
   font-family: 'Inconsolata', 'Anonymous Pro', 'Bitstream Vera Sans', 'Monaco', Courier, mono;
+  text-shadow: none !important;
 }
 
 pre {
   padding: 20px;
+  text-shadow: none !important;
 }
 
 blockquote {
