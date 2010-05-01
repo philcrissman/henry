@@ -9,7 +9,7 @@ body {
   line-height: 30px;
   padding: 15px;
   color: #222;
-  text-shadow: #ddd 1px 1px 2px;
+  text-shadow: #eaeaea 1px 1px 3px;
   text-align: center;
 }
 header, footer, section, article {
@@ -189,6 +189,20 @@ h1, h2, h3, h4 {
 ul, li {
   list-style-type: none;
 }
+
+ol li {
+  list-style-type: decimal;
+}
+
+ol li ol li {
+  list-style-type: lower-alpha;
+}
+
+ol li ul li {
+  list-style-type: disc;
+}
+
+
 code {
   font-family: 'Inconsolata', 'Anonymous Pro', 'Bitstream Vera Sans', 'Monaco', Courier, mono;
   text-shadow: none !important;
