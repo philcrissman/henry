@@ -2,5 +2,5 @@
 title: xwing
 date: 01/04/2010
 
-<img src="http://philcrissman.com/images/B0CsT.jpg" />
+<img src="http://philcrissman.com/images/B0CsT.jpg" width="440" />
 

@@ -94,6 +94,18 @@ module Toto
   
   class Article
     def path()    self[:date].strftime("/%Y/%m/%d/#{slug}") end
+    
+    def month
+      self[:date].strftime("%b")
+    end
+    
+    def day
+      self[:date].strftime("%d")
+    end
+    
+    def year
+      self[:date].strftime("%Y")
+    end
   end
 end
 
@@ -120,7 +132,7 @@ toto = Toto::Server.new do
   # set :cache,      0                                    # cache duration, in seconds
   set :url,       "philcrissman.com"
 
-  set :date, lambda {|now| now.strftime("%B #{now.day.ordinal} %Y") }
+  set :date, lambda {|now| now.strftime("%B #{now.day} %Y") }
 end
 
 run toto
