@@ -126,10 +126,10 @@ padding : 0px 200px 0 0; }
 }
 
 .date {
-  width: 50px;
+  width: 70px;
   float: left;
 /*  margin-left: -70px;*/
-  margin: -92px 0 0 -70px;
+  margin: -92px 0 0 -90px;
   background: #eee;
   color: #1A1F1E;
   padding: 10px 0 10px 0px;
