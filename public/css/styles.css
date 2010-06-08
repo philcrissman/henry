@@ -178,6 +178,15 @@ margin : 0 0 15px 0; }
   margin-left: 20px;
 }
 
+#content #archives ul {
+  margin: 0 0 0 0;
+}
+
+#content pre, #content pre code {
+  font-family: Monaco, "Lucida Console", monospace !important;
+  font-size: 0.9em !important;
+}
+
 /* The right column */
 #sidebar { 
 float : left;
