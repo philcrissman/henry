@@ -2,7 +2,7 @@
 title: All Your Webs
 date: 17/06/2010
 
-Taptaptap made an extension that <a href="http://taptaptap.com/blog/speaking-of-comments/">adds comments</a> to <a href="http://daringfireball.com">Daring Fireball</a>, and, as you can see in the comments, sparked a little debate on whether or not this was A Good Thing.
+Taptaptap made an extension that <a href="http://taptaptap.com/blog/speaking-of-comments/">adds comments</a> to <a href="http://daringfireball.net">Daring Fireball</a>, and, as you can see in the comments, sparked a little debate on whether or not this was A Good Thing.
 
 It's fine. I mean, I don't really care if I can comment on DF or not, but if someone wants to, and if people use this and like it, great. It's the web. You can't control how people view your page. They could view it on any browser, with any extension, greasemonkey script, or other shenanigans inbetween, and there is absolutely nothing you or I can do about it.
 
