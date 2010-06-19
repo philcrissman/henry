@@ -1,0 +1,15 @@
+--- 
+title: WhinyRendering
+date: 18/06/2010
+
+Quite often I'll come into a Rails project with a good portion of the code already written. Depending on style the developers were using, this sometimes means that I may not be able to easily tell, when looking at a given view, how the view is being generated. The URL may _say_ /pages/1, but for all I know, the routes file has instructions to use the ArmpitsController when it sees a route for pages/*; the URL might say /user/login, but for all we know, that may map to SessionController::sign_in. In other words, it's not always clear.
+
+And that's not even getting into the cases where there are multiple partials being used, some of which might be in app/views/shared, or who knows where.
+
+We've talked in the office a few times about a mythical plugin that could provide a little output stating exactly what controller, action, and template are being rendered, as well as any and all partials. Thus the idea for WhinyRendering was born.
+
+If any of the preceding scenario sounds familiar, I hope it's helpful.
+
+[WhinyRendering](http://github.com/philcrissman/whiny_rendering)
+
+
