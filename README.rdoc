@@ -4,7 +4,7 @@ A wonderful template for toto (http://cloudhead.io/toto), the blogging engine.
 
 Based off dorothy (http://github.com/cloudhead/dorothy), this one is a three column theme with the center column fixed, based in turn off parts of the ChangingMan layout (http://forabeautifulweb.com/blog/about/changingman_layout_updated/).
 
-henry uses haml instead of erb, and includes some css and js from [drnic](http://github.com/drnic) for code highlighting.
+henry uses haml instead of erb, and includes some css and js from drnic[http://github.com/drnic] for code highlighting.
 
 
 == Installing / Using
