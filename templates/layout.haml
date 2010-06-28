@@ -1,0 +1,62 @@
+!!!
+%html
+  %head
+    %link{ :href => "/css/styles.css", :rel => "stylesheet", :type => "text/css" }
+    %script{ :language => "javascript", :src => "/js/jquery-1.4.1.min.js" }
+    %script{ :language => "javascript", :src => "/js/app.js" }
+    %link{ :href => "http://drnicwilliams.com/external/CodeHighlighter/styles.css", :rel => "stylesheet", :type => "text/css" }
+    %link{ :href => "/css/code_highlighting.css", :rel => "stylesheet", :type => "text/css" }
+    %script{ :src => "http://drnicwilliams.com/external/CodeHighlighter/clean_tumblr_pre.js" }
+    %link{ :href => "/index.xml", :title => "#{title} - feed", :rel => "alternate", :type => "application/atom+xml" }
+    %title
+      = title
+  %body
+    %section#wrapper
+      %header#header
+        %h1
+          %a{ :href => "/" }
+            = title
+
+      %section#center
+        %section{ :style => "width: 160px;margin: 0px auto;" }
+          %img{:src => "/images/uncle_henry.jpg", :width => "160", :height => "160" }
+        %p
+        %ul
+          %li
+            %a{ :href => "/" }
+              Home
+          %li
+            %a{ :href => "/about" }
+              About
+          %li
+            %a{ :href => "/archives" }
+              Archives
+          %li
+            %a{ :href => "/index.xml" }
+              atom feed
+        %section{ :style => "width: 160px;margin: 0px auto; clear:both;" }
+          / you can put something else here, if you like.
+          
+          
+      %section#content
+        %section.bg.left
+          = yield
+      %section#sidebar
+        %section.bg.right
+          %h2
+            A heading
+          %ul
+            %li
+              Whatever
+            %li
+              And more...
+          %p{ :style => "clear:both" }
+            &nbsp;
+      %footer#footer
+        %section.bg
+          powered by
+          %a{ :href => "http://cloudhead.io/toto" }
+            toto
+          and
+          %a{ :href => "" }
+            henry

@@ -1,3 +1,8 @@
+/*
+ No attempt whatsoever has been made to make this layout & css work for IE.
+*/
+
+
 /* Reset */
 
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
@@ -16,40 +21,29 @@ cursor : help; }
 article, aside, dialog, figure, footer, header, hgroup, nav, section {
 display : block; }
 
-html { 
-/*background : rgb(255,237,49) url(../img/html.jpg) repeat-x 0 0; */
+html {
+  
 }
 
 body {
-padding-top : 10px;
-/*background : transparent url(../img/body.png) repeat-x 0 0;*/
-
-/*background: #c35817 url(orangeBurst2.jpg) no-repeat center fixed; */
-/*background: #c35817 url(bam.png) no-repeat center fixed;*/
-/*background: #c35817 url(the-depths.png) no-repeat top left fixed;*/
-font : 14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-/*background: #000 url("./pattern_098.gif") fixed;*/
-background: #fff;
-/*background: #BCBDAC;*/
-
-/*color: #3B2D38;*/
-color: #000;
+  padding-top : 10px;
+  font : 14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #fff;
+  color: #000;
 }
 
 
 h1, h2, h3, h4, h5, h6 {
-font-weight : bold; 
-line-height: 1.3em;
-/*text-transform : uppercase; */
+  font-weight : bold; 
+  line-height: 1.3em;
 }
 
 h1, h2 { 
-margin-bottom : .5em;
-margin-top: 1em;
-font-size : 2em; 
-letter-spacing : -1px; 
-border-bottom: 2px solid #000;
-/*color: #F02475;*/
+  margin-bottom : .5em;
+  margin-top: 1em;
+  font-size : 2em; 
+  letter-spacing : -1px; 
+  border-bottom: 2px solid #000;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -67,11 +61,13 @@ h1 a:visited, h2 a:visited {
 }
 
 blockquote {
-font-style : italic; }
+  font-style : italic; 
+}
 
 p, 
 ul, ol {
-margin : 0 20px 1.5em; }
+  margin : 0 20px 1.5em; 
+}
 
 ul{
   list-style-type: none;
@@ -83,20 +79,20 @@ li {
 
 /* Content wrapper */
 #wrapper {
-position : relative;
-width : 960px;
-margin : 0 auto; 
-padding-bottom : 60px;
-/*background : transparent url(../img/content.png) repeat-x 0 100%; */
+  position : relative;
+  width : 960px;
+  margin : 0 auto; 
+  padding-bottom : 60px;
 }
 
 #wrapper:after { 
-content : "\0020"; 
-display : block; 
-height : 0; 
-clear : both; 
-visibility : hidden; 
-overflow : hidden; }
+  content : "\0020"; 
+  display : block; 
+  height : 0; 
+  clear : both; 
+  visibility : hidden; 
+  overflow : hidden; 
+}
 
 #header {
   text-align: right;
@@ -111,26 +107,21 @@ overflow : hidden; }
 }
 
 /* The left column */
-#content {
-   
-float : left;
-width : 50%; 
-padding : 0px 200px 0 0; }
+#content {   
+  float : left;
+  width : 50%; 
+  padding : 0px 200px 0 0; 
+}
 
 #content div { 
-/*margin : 0 20px 1.5em;*/
-/*padding : 20px; */
-/*background-color : rgb(0,0,0); */
-/*color : rgb(255,255,255); */
-/*text-shadow : 0 1px 0 rgb(0,0,0); */
+
 }
 
 .date {
   width: 70px;
   float: left;
-/*  margin-left: -70px;*/
   margin: -92px 0 0 -90px;
-  background: #eee;
+  background: #fee2c3;
   color: #1A1F1E;
   padding: 10px 0 10px 0px;
   -moz-border-radius-topleft: 10px;
@@ -146,33 +137,30 @@ padding : 0px 200px 0 0; }
 .date span {
   width: 100%;
   line-height: 1.0em;
-/*  margin: 0px 10px !important;*/
   display: block;
 }
 
 .date span.month {
   font-size: 0.8em;
   text-transform: uppercase;
-/*  float: left;*/
   clear:both;
 }
 
 .date span.day {
   font-size: 2.4em;
-/*  float:left;*/
   clear:both;
 }
 
 .date span.year{
   font-size: 0.8em;
-/*  float:left;*/
   clear:both;
 }
 
 
 
 #content div p, #content section p {
-margin : 0 0 15px 0; }
+  margin : 0 0 15px 0; 
+}
 
 #content ul, #content ol {
   margin-left: 20px;
@@ -189,22 +177,18 @@ margin : 0 0 15px 0; }
 
 /* The right column */
 #sidebar { 
-float : left;
-width : 29%; 
-margin : 0 0 0 -200px; 
-padding : 0px 0 0 200px;
-
+  float : left;
+  width : 29%; 
+  margin : 0 0 0 -200px; 
+  padding : 0px 0 0 200px;
+  /*
+   Just a heads up; if you have no posts, or a page with _very_ little content,
+   the 'center' (fixed) area can overlap the footer, depending what other things
+   (photos, ads, etc) you put there. To prevent this, you can supply a 
+   min-height to the sidebar. You may need to experiment to find a good height.
+  */
+  min-height: 300px;
 }
-
-#sidebar a.sn {
-display : block;
-position : absolute;
-right : 20px;
-bottom : -20px;
-width : 105px;
-height : 120px;
-background : transparent url(../img/sn.png) no-repeat 0 0;
-text-indent : -9999px; }
 
 #sidebar div p {
   margin: 0 0 15px 0;
@@ -212,7 +196,7 @@ text-indent : -9999px; }
 
 /* column content */
 .bg {
-  background: #eee;
+  background: #fee2c3;
   color: #000;
   -moz-border-radius : 10px;
   -webkit-border-radius : 10px;
@@ -231,43 +215,41 @@ text-indent : -9999px; }
 
 .right {
   margin : 0 0 1.5em 0px;
-  background: #eee;
 }
 
 
 /* The center column */
 #center { 
-position : fixed; 
-top : 60px; 
-left : 50%; 
-width : 200px;
-z-index: 0;
- }
+  position : fixed; 
+  top : 60px; 
+  left : 50%; 
+  width : 200px;
+  z-index: 0;
+}
 
-/*#center div {
-border-right : 4px solid rgb(0,0,0); 
-border-left : 4px solid rgb(0,0,0); }
-*/
+
 #center p,
 #center ul {
-/*text-align : center; */
-/*text-transform : uppercase; */
+
 }
 
 #center ul { 
-list-style-type : none; 
-padding-bottom : 1.5em; }
+  list-style-type : none; 
+  padding-bottom : 1.5em; 
+}
 
 #center li {
-margin-bottom : .75em; 
-/*padding-bottom : .75em; */
-/*border-bottom : 1px solid rgb(0,0,0); */
-line-height : 1.2; }
+  margin-bottom : .75em; 
+  line-height : 1.2; 
+}
  
 #center li:last-child { 
-margin-bottom : 0; 
-padding-bottom : 0; 
-border-bottom-width : 0; }
+  margin-bottom : 0; 
+  padding-bottom : 0; 
+  border-bottom-width : 0; 
+}
+
+/* footer */
 
 #footer {
   clear: both;
@@ -276,16 +258,5 @@ border-bottom-width : 0; }
 }
 
 #footer .bg {
-  background: #eee;
-}
-
-img {
-  filter:alpha(opacity=100);
-  -moz-opacity:1.0;
-  -khtml-opacity: 1.00;
-  opacity: 1.00;
-}
-
-#sidebar iframe {
-
+  background: #fee2c3;
 }
